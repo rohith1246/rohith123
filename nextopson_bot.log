@@ -2176,3 +2176,965 @@ Accept-Language: en-US,en;q=0.9
 2025-01-21 23:52:45,523 - __main__ - INFO - Body: b'{"user_input":"hi"}'
 2025-01-21 23:52:45,525 - __main__ - INFO - Processing chat request - User ID: default, Input: hi
 2025-01-21 23:52:45,528 - werkzeug - INFO - 127.0.0.1 - - [21/Jan/2025 23:52:45] "POST /chat HTTP/1.1" 200 -
+2025-01-22 18:41:40,587 - nextopson_bot - INFO - Bot initialized successfully
+2025-01-22 18:41:41,084 - nextopson_bot - INFO - Bot initialized successfully
+2025-01-22 18:41:41,086 - __main__ - INFO - Chatbot initialized successfully
+2025-01-22 18:41:41,089 - __main__ - INFO - Starting Nextopson Chatbot API
+2025-01-22 18:41:41,427 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.103.46:5000
+2025-01-22 18:41:41,428 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-01-22 18:41:41,434 - werkzeug - INFO -  * Restarting with stat
+2025-01-22 18:42:05,272 - nextopson_bot - INFO - Bot initialized successfully
+2025-01-22 18:42:06,079 - nextopson_bot - INFO - Bot initialized successfully
+2025-01-22 18:42:06,080 - __main__ - INFO - Chatbot initialized successfully
+2025-01-22 18:42:06,086 - __main__ - INFO - Starting Nextopson Chatbot API
+2025-01-22 18:42:06,135 - werkzeug - WARNING -  * Debugger is active!
+2025-01-22 18:42:06,156 - werkzeug - INFO -  * Debugger PIN: 125-441-212
+2025-01-22 18:42:06,388 - __main__ - INFO - Headers: Host: localhost:5000
+Connection: keep-alive
+Accept: */*
+Access-Control-Request-Method: POST
+Access-Control-Request-Headers: content-type
+Origin: http://localhost:3000
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: same-site
+Sec-Fetch-Dest: empty
+Referer: http://localhost:3000/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+
+
+2025-01-22 18:42:06,391 - __main__ - INFO - Body: b''
+2025-01-22 18:42:06,397 - werkzeug - INFO - 127.0.0.1 - - [22/Jan/2025 18:42:06] "OPTIONS /chat HTTP/1.1" 200 -
+2025-01-22 18:42:06,402 - __main__ - INFO - Headers: Host: localhost:5000
+Connection: keep-alive
+Content-Length: 43
+Sec-Ch-Ua-Platform: "Windows"
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+Sec-Ch-Ua: "Google Chrome";v="131", "Chromium";v="131", "Not_A Brand";v="24"
+Content-Type: application/json
+Sec-Ch-Ua-Mobile: ?0
+Accept: */*
+Origin: http://localhost:3000
+Sec-Fetch-Site: same-site
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost:3000/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+
+
+2025-01-22 18:42:06,405 - __main__ - INFO - Body: b'{"user_input":"I want to sell my property"}'
+2025-01-22 18:42:06,408 - __main__ - INFO - Processing chat request - User ID: default, Input: I want to sell my property
+2025-01-22 18:42:06,411 - werkzeug - INFO - 127.0.0.1 - - [22/Jan/2025 18:42:06] "POST /chat HTTP/1.1" 200 -
+2025-01-22 18:42:13,189 - __main__ - INFO - Headers: Host: localhost:5000
+Connection: keep-alive
+Accept: */*
+Access-Control-Request-Method: POST
+Access-Control-Request-Headers: content-type
+Origin: http://localhost:3000
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: same-site
+Sec-Fetch-Dest: empty
+Referer: http://localhost:3000/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+
+
+2025-01-22 18:42:13,191 - __main__ - INFO - Body: b''
+2025-01-22 18:42:13,194 - werkzeug - INFO - 127.0.0.1 - - [22/Jan/2025 18:42:13] "OPTIONS /chat HTTP/1.1" 200 -
+2025-01-22 18:42:13,457 - __main__ - INFO - Headers: Host: localhost:5000
+Connection: keep-alive
+Content-Length: 38
+Sec-Ch-Ua-Platform: "Windows"
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+Sec-Ch-Ua: "Google Chrome";v="131", "Chromium";v="131", "Not_A Brand";v="24"
+Content-Type: application/json
+Sec-Ch-Ua-Mobile: ?0
+Accept: */*
+Origin: http://localhost:3000
+Sec-Fetch-Site: same-site
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost:3000/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+
+
+2025-01-22 18:42:13,459 - __main__ - INFO - Body: b'{"user_input":"What is your pricing?"}'
+2025-01-22 18:42:13,460 - __main__ - INFO - Processing chat request - User ID: default, Input: What is your pricing?
+2025-01-22 18:42:13,463 - werkzeug - INFO - 127.0.0.1 - - [22/Jan/2025 18:42:13] "POST /chat HTTP/1.1" 200 -
+2025-01-22 18:42:15,628 - __main__ - INFO - Headers: Host: localhost:5000
+Connection: keep-alive
+Content-Length: 49
+Sec-Ch-Ua-Platform: "Windows"
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+Sec-Ch-Ua: "Google Chrome";v="131", "Chromium";v="131", "Not_A Brand";v="24"
+Content-Type: application/json
+Sec-Ch-Ua-Mobile: ?0
+Accept: */*
+Origin: http://localhost:3000
+Sec-Fetch-Site: same-site
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost:3000/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+
+
+2025-01-22 18:42:15,631 - __main__ - INFO - Body: b'{"user_input":"How can I search for properties?"}'
+2025-01-22 18:42:15,632 - __main__ - INFO - Processing chat request - User ID: default, Input: How can I search for properties?
+2025-01-22 18:42:15,634 - werkzeug - INFO - 127.0.0.1 - - [22/Jan/2025 18:42:15] "POST /chat HTTP/1.1" 200 -
+2025-01-22 18:42:19,554 - __main__ - INFO - Headers: Host: localhost:5000
+Connection: keep-alive
+Accept: */*
+Access-Control-Request-Method: POST
+Access-Control-Request-Headers: content-type
+Origin: http://localhost:3000
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: same-site
+Sec-Fetch-Dest: empty
+Referer: http://localhost:3000/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+
+
+2025-01-22 18:42:19,556 - __main__ - INFO - Body: b''
+2025-01-22 18:42:19,558 - werkzeug - INFO - 127.0.0.1 - - [22/Jan/2025 18:42:19] "OPTIONS /chat HTTP/1.1" 200 -
+2025-01-22 18:42:19,824 - __main__ - INFO - Headers: Host: localhost:5000
+Connection: keep-alive
+Content-Length: 41
+Sec-Ch-Ua-Platform: "Windows"
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+Sec-Ch-Ua: "Google Chrome";v="131", "Chromium";v="131", "Not_A Brand";v="24"
+Content-Type: application/json
+Sec-Ch-Ua-Mobile: ?0
+Accept: */*
+Origin: http://localhost:3000
+Sec-Fetch-Site: same-site
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost:3000/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+
+
+2025-01-22 18:42:19,827 - __main__ - INFO - Body: b'{"user_input":"I want to buy a property"}'
+2025-01-22 18:42:19,828 - __main__ - INFO - Processing chat request - User ID: default, Input: I want to buy a property
+2025-01-22 18:42:19,831 - werkzeug - INFO - 127.0.0.1 - - [22/Jan/2025 18:42:19] "POST /chat HTTP/1.1" 200 -
+2025-01-22 18:42:22,517 - __main__ - INFO - Headers: Host: localhost:5000
+Connection: keep-alive
+Content-Length: 42
+Sec-Ch-Ua-Platform: "Windows"
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+Sec-Ch-Ua: "Google Chrome";v="131", "Chromium";v="131", "Not_A Brand";v="24"
+Content-Type: application/json
+Sec-Ch-Ua-Mobile: ?0
+Accept: */*
+Origin: http://localhost:3000
+Sec-Fetch-Site: same-site
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost:3000/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+
+
+2025-01-22 18:42:22,519 - __main__ - INFO - Body: b'{"user_input":"How do I contact support?"}'
+2025-01-22 18:42:22,520 - __main__ - INFO - Processing chat request - User ID: default, Input: How do I contact support?
+2025-01-22 18:42:22,523 - werkzeug - INFO - 127.0.0.1 - - [22/Jan/2025 18:42:22] "POST /chat HTTP/1.1" 200 -
+2025-01-22 18:42:30,926 - __main__ - INFO - Headers: Host: localhost:5000
+Connection: keep-alive
+Accept: */*
+Access-Control-Request-Method: POST
+Access-Control-Request-Headers: content-type
+Origin: http://localhost:3000
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: same-site
+Sec-Fetch-Dest: empty
+Referer: http://localhost:3000/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+
+
+2025-01-22 18:42:30,928 - __main__ - INFO - Body: b''
+2025-01-22 18:42:30,930 - werkzeug - INFO - 127.0.0.1 - - [22/Jan/2025 18:42:30] "OPTIONS /chat HTTP/1.1" 200 -
+2025-01-22 18:42:31,192 - __main__ - INFO - Headers: Host: localhost:5000
+Connection: keep-alive
+Content-Length: 45
+Sec-Ch-Ua-Platform: "Windows"
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+Sec-Ch-Ua: "Google Chrome";v="131", "Chromium";v="131", "Not_A Brand";v="24"
+Content-Type: application/json
+Sec-Ch-Ua-Mobile: ?0
+Accept: */*
+Origin: http://localhost:3000
+Sec-Fetch-Site: same-site
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost:3000/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+
+
+2025-01-22 18:42:31,195 - __main__ - INFO - Body: b'{"user_input":"What documents are required?"}'
+2025-01-22 18:42:31,196 - __main__ - INFO - Processing chat request - User ID: default, Input: What documents are required?
+2025-01-22 18:42:31,201 - nextopson_bot - ERROR - Response generation error: 'action'
+2025-01-22 18:42:31,204 - werkzeug - INFO - 127.0.0.1 - - [22/Jan/2025 18:42:31] "POST /chat HTTP/1.1" 200 -
+2025-01-22 18:42:32,786 - __main__ - INFO - Headers: Host: localhost:5000
+Connection: keep-alive
+Content-Length: 49
+Sec-Ch-Ua-Platform: "Windows"
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+Sec-Ch-Ua: "Google Chrome";v="131", "Chromium";v="131", "Not_A Brand";v="24"
+Content-Type: application/json
+Sec-Ch-Ua-Mobile: ?0
+Accept: */*
+Origin: http://localhost:3000
+Sec-Fetch-Site: same-site
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost:3000/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+
+
+2025-01-22 18:42:32,788 - __main__ - INFO - Body: b'{"user_input":"How can I search for properties?"}'
+2025-01-22 18:42:32,789 - __main__ - INFO - Processing chat request - User ID: default, Input: How can I search for properties?
+2025-01-22 18:42:32,790 - nextopson_bot - ERROR - Response generation error: 'action'
+2025-01-22 18:42:32,792 - werkzeug - INFO - 127.0.0.1 - - [22/Jan/2025 18:42:32] "POST /chat HTTP/1.1" 200 -
+2025-01-22 18:42:34,680 - __main__ - INFO - Headers: Host: localhost:5000
+Connection: keep-alive
+Content-Length: 43
+Sec-Ch-Ua-Platform: "Windows"
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+Sec-Ch-Ua: "Google Chrome";v="131", "Chromium";v="131", "Not_A Brand";v="24"
+Content-Type: application/json
+Sec-Ch-Ua-Mobile: ?0
+Accept: */*
+Origin: http://localhost:3000
+Sec-Fetch-Site: same-site
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost:3000/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+
+
+2025-01-22 18:42:34,682 - __main__ - INFO - Body: b'{"user_input":"I want to sell my property"}'
+2025-01-22 18:42:34,683 - __main__ - INFO - Processing chat request - User ID: default, Input: I want to sell my property
+2025-01-22 18:42:34,685 - nextopson_bot - ERROR - Response generation error: 'action'
+2025-01-22 18:42:34,686 - werkzeug - INFO - 127.0.0.1 - - [22/Jan/2025 18:42:34] "POST /chat HTTP/1.1" 200 -
+2025-01-22 18:42:43,834 - __main__ - INFO - Headers: Host: localhost:5000
+Connection: keep-alive
+Accept: */*
+Access-Control-Request-Method: POST
+Access-Control-Request-Headers: content-type
+Origin: http://localhost:3000
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: same-site
+Sec-Fetch-Dest: empty
+Referer: http://localhost:3000/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+
+
+2025-01-22 18:42:43,835 - __main__ - INFO - Body: b''
+2025-01-22 18:42:43,838 - werkzeug - INFO - 127.0.0.1 - - [22/Jan/2025 18:42:43] "OPTIONS /chat HTTP/1.1" 200 -
+2025-01-22 18:42:44,160 - __main__ - INFO - Headers: Host: localhost:5000
+Connection: keep-alive
+Content-Length: 38
+Sec-Ch-Ua-Platform: "Windows"
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+Sec-Ch-Ua: "Google Chrome";v="131", "Chromium";v="131", "Not_A Brand";v="24"
+Content-Type: application/json
+Sec-Ch-Ua-Mobile: ?0
+Accept: */*
+Origin: http://localhost:3000
+Sec-Fetch-Site: same-site
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost:3000/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+
+
+2025-01-22 18:42:44,162 - __main__ - INFO - Body: b'{"user_input":"What is your pricing?"}'
+2025-01-22 18:42:44,163 - __main__ - INFO - Processing chat request - User ID: default, Input: What is your pricing?
+2025-01-22 18:42:44,164 - nextopson_bot - ERROR - Response generation error: 'action'
+2025-01-22 18:42:44,166 - werkzeug - INFO - 127.0.0.1 - - [22/Jan/2025 18:42:44] "POST /chat HTTP/1.1" 200 -
+2025-01-22 18:42:46,723 - __main__ - INFO - Headers: Host: localhost:5000
+Connection: keep-alive
+Content-Length: 43
+Sec-Ch-Ua-Platform: "Windows"
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+Sec-Ch-Ua: "Google Chrome";v="131", "Chromium";v="131", "Not_A Brand";v="24"
+Content-Type: application/json
+Sec-Ch-Ua-Mobile: ?0
+Accept: */*
+Origin: http://localhost:3000
+Sec-Fetch-Site: same-site
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost:3000/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+
+
+2025-01-22 18:42:46,725 - __main__ - INFO - Body: b'{"user_input":"I want to sell my property"}'
+2025-01-22 18:42:46,727 - __main__ - INFO - Processing chat request - User ID: default, Input: I want to sell my property
+2025-01-22 18:42:46,728 - nextopson_bot - ERROR - Response generation error: 'action'
+2025-01-22 18:42:46,730 - werkzeug - INFO - 127.0.0.1 - - [22/Jan/2025 18:42:46] "POST /chat HTTP/1.1" 200 -
+2025-01-22 18:42:48,358 - __main__ - INFO - Headers: Host: localhost:5000
+Connection: keep-alive
+Content-Length: 43
+Sec-Ch-Ua-Platform: "Windows"
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+Sec-Ch-Ua: "Google Chrome";v="131", "Chromium";v="131", "Not_A Brand";v="24"
+Content-Type: application/json
+Sec-Ch-Ua-Mobile: ?0
+Accept: */*
+Origin: http://localhost:3000
+Sec-Fetch-Site: same-site
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost:3000/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+
+
+2025-01-22 18:42:48,361 - __main__ - INFO - Body: b'{"user_input":"I want to sell my property"}'
+2025-01-22 18:42:48,362 - __main__ - INFO - Processing chat request - User ID: default, Input: I want to sell my property
+2025-01-22 18:42:48,363 - nextopson_bot - ERROR - Response generation error: 'action'
+2025-01-22 18:42:48,365 - werkzeug - INFO - 127.0.0.1 - - [22/Jan/2025 18:42:48] "POST /chat HTTP/1.1" 200 -
+2025-01-22 18:42:48,626 - __main__ - INFO - Headers: Host: localhost:5000
+Connection: keep-alive
+Content-Length: 43
+Sec-Ch-Ua-Platform: "Windows"
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+Sec-Ch-Ua: "Google Chrome";v="131", "Chromium";v="131", "Not_A Brand";v="24"
+Content-Type: application/json
+Sec-Ch-Ua-Mobile: ?0
+Accept: */*
+Origin: http://localhost:3000
+Sec-Fetch-Site: same-site
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost:3000/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+
+
+2025-01-22 18:42:48,628 - __main__ - INFO - Body: b'{"user_input":"I want to sell my property"}'
+2025-01-22 18:42:48,630 - __main__ - INFO - Processing chat request - User ID: default, Input: I want to sell my property
+2025-01-22 18:42:48,631 - nextopson_bot - ERROR - Response generation error: 'action'
+2025-01-22 18:42:48,633 - werkzeug - INFO - 127.0.0.1 - - [22/Jan/2025 18:42:48] "POST /chat HTTP/1.1" 200 -
+2025-01-22 18:42:48,913 - __main__ - INFO - Headers: Host: localhost:5000
+Connection: keep-alive
+Content-Length: 43
+Sec-Ch-Ua-Platform: "Windows"
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+Sec-Ch-Ua: "Google Chrome";v="131", "Chromium";v="131", "Not_A Brand";v="24"
+Content-Type: application/json
+Sec-Ch-Ua-Mobile: ?0
+Accept: */*
+Origin: http://localhost:3000
+Sec-Fetch-Site: same-site
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost:3000/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+
+
+2025-01-22 18:42:48,915 - __main__ - INFO - Body: b'{"user_input":"I want to sell my property"}'
+2025-01-22 18:42:48,916 - __main__ - INFO - Processing chat request - User ID: default, Input: I want to sell my property
+2025-01-22 18:42:48,917 - nextopson_bot - ERROR - Response generation error: 'action'
+2025-01-22 18:42:48,919 - werkzeug - INFO - 127.0.0.1 - - [22/Jan/2025 18:42:48] "POST /chat HTTP/1.1" 200 -
+2025-01-22 18:42:49,462 - __main__ - INFO - Headers: Host: localhost:5000
+Connection: keep-alive
+Accept: */*
+Access-Control-Request-Method: POST
+Access-Control-Request-Headers: content-type
+Origin: http://localhost:3000
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: same-site
+Sec-Fetch-Dest: empty
+Referer: http://localhost:3000/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+
+
+2025-01-22 18:42:49,464 - __main__ - INFO - Body: b''
+2025-01-22 18:42:49,467 - werkzeug - INFO - 127.0.0.1 - - [22/Jan/2025 18:42:49] "OPTIONS /chat HTTP/1.1" 200 -
+2025-01-22 18:42:49,780 - __main__ - INFO - Headers: Host: localhost:5000
+Connection: keep-alive
+Content-Length: 43
+Sec-Ch-Ua-Platform: "Windows"
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+Sec-Ch-Ua: "Google Chrome";v="131", "Chromium";v="131", "Not_A Brand";v="24"
+Content-Type: application/json
+Sec-Ch-Ua-Mobile: ?0
+Accept: */*
+Origin: http://localhost:3000
+Sec-Fetch-Site: same-site
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost:3000/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+
+
+2025-01-22 18:42:49,783 - __main__ - INFO - Body: b'{"user_input":"I want to sell my property"}'
+2025-01-22 18:42:49,784 - __main__ - INFO - Processing chat request - User ID: default, Input: I want to sell my property
+2025-01-22 18:42:49,785 - nextopson_bot - ERROR - Response generation error: 'action'
+2025-01-22 18:42:49,787 - werkzeug - INFO - 127.0.0.1 - - [22/Jan/2025 18:42:49] "POST /chat HTTP/1.1" 200 -
+2025-01-22 18:42:50,045 - __main__ - INFO - Headers: Host: localhost:5000
+Connection: keep-alive
+Content-Length: 43
+Sec-Ch-Ua-Platform: "Windows"
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+Sec-Ch-Ua: "Google Chrome";v="131", "Chromium";v="131", "Not_A Brand";v="24"
+Content-Type: application/json
+Sec-Ch-Ua-Mobile: ?0
+Accept: */*
+Origin: http://localhost:3000
+Sec-Fetch-Site: same-site
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost:3000/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+
+
+2025-01-22 18:42:50,048 - __main__ - INFO - Body: b'{"user_input":"I want to sell my property"}'
+2025-01-22 18:42:50,049 - __main__ - INFO - Processing chat request - User ID: default, Input: I want to sell my property
+2025-01-22 18:42:50,050 - nextopson_bot - ERROR - Response generation error: 'action'
+2025-01-22 18:42:50,052 - werkzeug - INFO - 127.0.0.1 - - [22/Jan/2025 18:42:50] "POST /chat HTTP/1.1" 200 -
+2025-01-22 18:43:08,159 - __main__ - INFO - Headers: Host: localhost:5000
+Connection: keep-alive
+Accept: */*
+Access-Control-Request-Method: POST
+Access-Control-Request-Headers: content-type
+Origin: http://localhost:3000
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: same-site
+Sec-Fetch-Dest: empty
+Referer: http://localhost:3000/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+
+
+2025-01-22 18:43:08,160 - __main__ - INFO - Body: b''
+2025-01-22 18:43:08,163 - werkzeug - INFO - 127.0.0.1 - - [22/Jan/2025 18:43:08] "OPTIONS /chat HTTP/1.1" 200 -
+2025-01-22 18:43:08,478 - __main__ - INFO - Headers: Host: localhost:5000
+Connection: keep-alive
+Content-Length: 19
+Sec-Ch-Ua-Platform: "Windows"
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+Sec-Ch-Ua: "Google Chrome";v="131", "Chromium";v="131", "Not_A Brand";v="24"
+Content-Type: application/json
+Sec-Ch-Ua-Mobile: ?0
+Accept: */*
+Origin: http://localhost:3000
+Sec-Fetch-Site: same-site
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost:3000/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+
+
+2025-01-22 18:43:08,481 - __main__ - INFO - Body: b'{"user_input":"hi"}'
+2025-01-22 18:43:08,482 - __main__ - INFO - Processing chat request - User ID: default, Input: hi
+2025-01-22 18:43:08,483 - nextopson_bot - ERROR - Response generation error: 'action'
+2025-01-22 18:43:08,485 - werkzeug - INFO - 127.0.0.1 - - [22/Jan/2025 18:43:08] "POST /chat HTTP/1.1" 200 -
+2025-01-22 18:43:14,159 - __main__ - INFO - Headers: Host: localhost:5000
+Connection: keep-alive
+Accept: */*
+Access-Control-Request-Method: POST
+Access-Control-Request-Headers: content-type
+Origin: http://localhost:3000
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: same-site
+Sec-Fetch-Dest: empty
+Referer: http://localhost:3000/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+
+
+2025-01-22 18:43:14,161 - __main__ - INFO - Body: b''
+2025-01-22 18:43:14,162 - werkzeug - INFO - 127.0.0.1 - - [22/Jan/2025 18:43:14] "OPTIONS /chat HTTP/1.1" 200 -
+2025-01-22 18:43:14,487 - __main__ - INFO - Headers: Host: localhost:5000
+Connection: keep-alive
+Content-Length: 19
+Sec-Ch-Ua-Platform: "Windows"
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+Sec-Ch-Ua: "Google Chrome";v="131", "Chromium";v="131", "Not_A Brand";v="24"
+Content-Type: application/json
+Sec-Ch-Ua-Mobile: ?0
+Accept: */*
+Origin: http://localhost:3000
+Sec-Fetch-Site: same-site
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost:3000/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+
+
+2025-01-22 18:43:14,490 - __main__ - INFO - Body: b'{"user_input":"hi"}'
+2025-01-22 18:43:14,491 - __main__ - INFO - Processing chat request - User ID: default, Input: hi
+2025-01-22 18:43:14,492 - nextopson_bot - ERROR - Response generation error: 'action'
+2025-01-22 18:43:14,493 - werkzeug - INFO - 127.0.0.1 - - [22/Jan/2025 18:43:14] "POST /chat HTTP/1.1" 200 -
+2025-01-22 18:43:16,680 - __main__ - INFO - Headers: Host: localhost:5000
+Connection: keep-alive
+Content-Length: 19
+Sec-Ch-Ua-Platform: "Windows"
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+Sec-Ch-Ua: "Google Chrome";v="131", "Chromium";v="131", "Not_A Brand";v="24"
+Content-Type: application/json
+Sec-Ch-Ua-Mobile: ?0
+Accept: */*
+Origin: http://localhost:3000
+Sec-Fetch-Site: same-site
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost:3000/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+
+
+2025-01-22 18:43:16,683 - __main__ - INFO - Body: b'{"user_input":"hi"}'
+2025-01-22 18:43:16,684 - __main__ - INFO - Processing chat request - User ID: default, Input: hi
+2025-01-22 18:43:16,685 - nextopson_bot - ERROR - Response generation error: 'action'
+2025-01-22 18:43:16,687 - werkzeug - INFO - 127.0.0.1 - - [22/Jan/2025 18:43:16] "POST /chat HTTP/1.1" 200 -
+2025-01-22 18:43:20,011 - __main__ - INFO - Headers: Host: localhost:5000
+Connection: keep-alive
+Accept: */*
+Access-Control-Request-Method: POST
+Access-Control-Request-Headers: content-type
+Origin: http://localhost:3000
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: same-site
+Sec-Fetch-Dest: empty
+Referer: http://localhost:3000/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+
+
+2025-01-22 18:43:20,013 - __main__ - INFO - Body: b''
+2025-01-22 18:43:20,015 - werkzeug - INFO - 127.0.0.1 - - [22/Jan/2025 18:43:20] "OPTIONS /chat HTTP/1.1" 200 -
+2025-01-22 18:43:20,275 - __main__ - INFO - Headers: Host: localhost:5000
+Connection: keep-alive
+Content-Length: 19
+Sec-Ch-Ua-Platform: "Windows"
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+Sec-Ch-Ua: "Google Chrome";v="131", "Chromium";v="131", "Not_A Brand";v="24"
+Content-Type: application/json
+Sec-Ch-Ua-Mobile: ?0
+Accept: */*
+Origin: http://localhost:3000
+Sec-Fetch-Site: same-site
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost:3000/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+
+
+2025-01-22 18:43:20,277 - __main__ - INFO - Body: b'{"user_input":"hi"}'
+2025-01-22 18:43:20,278 - __main__ - INFO - Processing chat request - User ID: default, Input: hi
+2025-01-22 18:43:20,279 - nextopson_bot - ERROR - Response generation error: 'action'
+2025-01-22 18:43:20,281 - werkzeug - INFO - 127.0.0.1 - - [22/Jan/2025 18:43:20] "POST /chat HTTP/1.1" 200 -
+2025-01-22 18:43:38,094 - nextopson_bot - INFO - Bot initialized successfully
+2025-01-22 18:43:38,177 - nextopson_bot - INFO - Bot initialized successfully
+2025-01-22 18:43:38,178 - __main__ - INFO - Chatbot initialized successfully
+2025-01-22 18:43:38,179 - __main__ - INFO - Starting Nextopson Chatbot API
+2025-01-22 18:43:38,209 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.103.46:5000
+2025-01-22 18:43:38,210 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-01-22 18:43:38,212 - werkzeug - INFO -  * Restarting with stat
+2025-01-22 18:43:41,312 - nextopson_bot - INFO - Bot initialized successfully
+2025-01-22 18:43:41,398 - nextopson_bot - INFO - Bot initialized successfully
+2025-01-22 18:43:41,399 - __main__ - INFO - Chatbot initialized successfully
+2025-01-22 18:43:41,400 - __main__ - INFO - Starting Nextopson Chatbot API
+2025-01-22 18:43:41,405 - werkzeug - WARNING -  * Debugger is active!
+2025-01-22 18:43:41,408 - werkzeug - INFO -  * Debugger PIN: 125-441-212
+2025-01-22 18:43:47,759 - __main__ - INFO - Headers: Host: localhost:5000
+Connection: keep-alive
+Accept: */*
+Access-Control-Request-Method: POST
+Access-Control-Request-Headers: content-type
+Origin: http://localhost:3000
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: same-site
+Sec-Fetch-Dest: empty
+Referer: http://localhost:3000/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+
+
+2025-01-22 18:43:47,762 - __main__ - INFO - Body: b''
+2025-01-22 18:43:47,765 - werkzeug - INFO - 127.0.0.1 - - [22/Jan/2025 18:43:47] "OPTIONS /chat HTTP/1.1" 200 -
+2025-01-22 18:43:48,024 - __main__ - INFO - Headers: Host: localhost:5000
+Connection: keep-alive
+Content-Length: 38
+Sec-Ch-Ua-Platform: "Windows"
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+Sec-Ch-Ua: "Google Chrome";v="131", "Chromium";v="131", "Not_A Brand";v="24"
+Content-Type: application/json
+Sec-Ch-Ua-Mobile: ?0
+Accept: */*
+Origin: http://localhost:3000
+Sec-Fetch-Site: same-site
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost:3000/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+
+
+2025-01-22 18:43:48,026 - __main__ - INFO - Body: b'{"user_input":"What is your pricing?"}'
+2025-01-22 18:43:48,027 - __main__ - INFO - Processing chat request - User ID: default, Input: What is your pricing?
+2025-01-22 18:43:48,034 - werkzeug - INFO - 127.0.0.1 - - [22/Jan/2025 18:43:48] "POST /chat HTTP/1.1" 200 -
+2025-01-22 18:43:51,350 - __main__ - INFO - Headers: Host: localhost:5000
+Connection: keep-alive
+Content-Length: 19
+Sec-Ch-Ua-Platform: "Windows"
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+Sec-Ch-Ua: "Google Chrome";v="131", "Chromium";v="131", "Not_A Brand";v="24"
+Content-Type: application/json
+Sec-Ch-Ua-Mobile: ?0
+Accept: */*
+Origin: http://localhost:3000
+Sec-Fetch-Site: same-site
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost:3000/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+
+
+2025-01-22 18:43:51,352 - __main__ - INFO - Body: b'{"user_input":"hi"}'
+2025-01-22 18:43:51,353 - __main__ - INFO - Processing chat request - User ID: default, Input: hi
+2025-01-22 18:43:51,356 - werkzeug - INFO - 127.0.0.1 - - [22/Jan/2025 18:43:51] "POST /chat HTTP/1.1" 200 -
+2025-01-22 18:43:55,087 - __main__ - INFO - Headers: Host: localhost:5000
+Connection: keep-alive
+Accept: */*
+Access-Control-Request-Method: POST
+Access-Control-Request-Headers: content-type
+Origin: http://localhost:3000
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: same-site
+Sec-Fetch-Dest: empty
+Referer: http://localhost:3000/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+
+
+2025-01-22 18:43:55,089 - __main__ - INFO - Body: b''
+2025-01-22 18:43:55,092 - werkzeug - INFO - 127.0.0.1 - - [22/Jan/2025 18:43:55] "OPTIONS /chat HTTP/1.1" 200 -
+2025-01-22 18:43:55,354 - __main__ - INFO - Headers: Host: localhost:5000
+Connection: keep-alive
+Content-Length: 43
+Sec-Ch-Ua-Platform: "Windows"
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+Sec-Ch-Ua: "Google Chrome";v="131", "Chromium";v="131", "Not_A Brand";v="24"
+Content-Type: application/json
+Sec-Ch-Ua-Mobile: ?0
+Accept: */*
+Origin: http://localhost:3000
+Sec-Fetch-Site: same-site
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost:3000/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+
+
+2025-01-22 18:43:55,356 - __main__ - INFO - Body: b'{"user_input":"I want to sell my property"}'
+2025-01-22 18:43:55,358 - __main__ - INFO - Processing chat request - User ID: default, Input: I want to sell my property
+2025-01-22 18:43:55,360 - werkzeug - INFO - 127.0.0.1 - - [22/Jan/2025 18:43:55] "POST /chat HTTP/1.1" 200 -
+2025-01-22 18:43:57,307 - __main__ - INFO - Headers: Host: localhost:5000
+Connection: keep-alive
+Content-Length: 41
+Sec-Ch-Ua-Platform: "Windows"
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+Sec-Ch-Ua: "Google Chrome";v="131", "Chromium";v="131", "Not_A Brand";v="24"
+Content-Type: application/json
+Sec-Ch-Ua-Mobile: ?0
+Accept: */*
+Origin: http://localhost:3000
+Sec-Fetch-Site: same-site
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost:3000/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+
+
+2025-01-22 18:43:57,309 - __main__ - INFO - Body: b'{"user_input":"I want to buy a property"}'
+2025-01-22 18:43:57,310 - __main__ - INFO - Processing chat request - User ID: default, Input: I want to buy a property
+2025-01-22 18:43:57,312 - werkzeug - INFO - 127.0.0.1 - - [22/Jan/2025 18:43:57] "POST /chat HTTP/1.1" 200 -
+2025-01-22 18:44:01,934 - __main__ - INFO - Headers: Host: localhost:5000
+Connection: keep-alive
+Accept: */*
+Access-Control-Request-Method: POST
+Access-Control-Request-Headers: content-type
+Origin: http://localhost:3000
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: same-site
+Sec-Fetch-Dest: empty
+Referer: http://localhost:3000/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+
+
+2025-01-22 18:44:01,936 - __main__ - INFO - Body: b''
+2025-01-22 18:44:01,939 - werkzeug - INFO - 127.0.0.1 - - [22/Jan/2025 18:44:01] "OPTIONS /chat HTTP/1.1" 200 -
+2025-01-22 18:44:02,198 - __main__ - INFO - Headers: Host: localhost:5000
+Connection: keep-alive
+Content-Length: 42
+Sec-Ch-Ua-Platform: "Windows"
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+Sec-Ch-Ua: "Google Chrome";v="131", "Chromium";v="131", "Not_A Brand";v="24"
+Content-Type: application/json
+Sec-Ch-Ua-Mobile: ?0
+Accept: */*
+Origin: http://localhost:3000
+Sec-Fetch-Site: same-site
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost:3000/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+
+
+2025-01-22 18:44:02,200 - __main__ - INFO - Body: b'{"user_input":"How do I contact support?"}'
+2025-01-22 18:44:02,201 - __main__ - INFO - Processing chat request - User ID: default, Input: How do I contact support?
+2025-01-22 18:44:02,203 - werkzeug - INFO - 127.0.0.1 - - [22/Jan/2025 18:44:02] "POST /chat HTTP/1.1" 200 -
+2025-01-22 18:44:04,639 - __main__ - INFO - Headers: Host: localhost:5000
+Connection: keep-alive
+Content-Length: 45
+Sec-Ch-Ua-Platform: "Windows"
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+Sec-Ch-Ua: "Google Chrome";v="131", "Chromium";v="131", "Not_A Brand";v="24"
+Content-Type: application/json
+Sec-Ch-Ua-Mobile: ?0
+Accept: */*
+Origin: http://localhost:3000
+Sec-Fetch-Site: same-site
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost:3000/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+
+
+2025-01-22 18:44:04,641 - __main__ - INFO - Body: b'{"user_input":"What documents are required?"}'
+2025-01-22 18:44:04,642 - __main__ - INFO - Processing chat request - User ID: default, Input: What documents are required?
+2025-01-22 18:44:04,645 - werkzeug - INFO - 127.0.0.1 - - [22/Jan/2025 18:44:04] "POST /chat HTTP/1.1" 200 -
+2025-01-22 18:44:06,707 - __main__ - INFO - Headers: Host: localhost:5000
+Connection: keep-alive
+Content-Length: 45
+Sec-Ch-Ua-Platform: "Windows"
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+Sec-Ch-Ua: "Google Chrome";v="131", "Chromium";v="131", "Not_A Brand";v="24"
+Content-Type: application/json
+Sec-Ch-Ua-Mobile: ?0
+Accept: */*
+Origin: http://localhost:3000
+Sec-Fetch-Site: same-site
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost:3000/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+
+
+2025-01-22 18:44:06,710 - __main__ - INFO - Body: b'{"user_input":"What documents are required?"}'
+2025-01-22 18:44:06,711 - __main__ - INFO - Processing chat request - User ID: default, Input: What documents are required?
+2025-01-22 18:44:06,713 - werkzeug - INFO - 127.0.0.1 - - [22/Jan/2025 18:44:06] "POST /chat HTTP/1.1" 200 -
+2025-01-22 18:44:07,615 - __main__ - INFO - Headers: Host: localhost:5000
+Connection: keep-alive
+Accept: */*
+Access-Control-Request-Method: POST
+Access-Control-Request-Headers: content-type
+Origin: http://localhost:3000
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: same-site
+Sec-Fetch-Dest: empty
+Referer: http://localhost:3000/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+
+
+2025-01-22 18:44:07,618 - __main__ - INFO - Body: b''
+2025-01-22 18:44:07,620 - werkzeug - INFO - 127.0.0.1 - - [22/Jan/2025 18:44:07] "OPTIONS /chat HTTP/1.1" 200 -
+2025-01-22 18:44:07,940 - __main__ - INFO - Headers: Host: localhost:5000
+Connection: keep-alive
+Content-Length: 45
+Sec-Ch-Ua-Platform: "Windows"
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+Sec-Ch-Ua: "Google Chrome";v="131", "Chromium";v="131", "Not_A Brand";v="24"
+Content-Type: application/json
+Sec-Ch-Ua-Mobile: ?0
+Accept: */*
+Origin: http://localhost:3000
+Sec-Fetch-Site: same-site
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost:3000/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+
+
+2025-01-22 18:44:07,942 - __main__ - INFO - Body: b'{"user_input":"What documents are required?"}'
+2025-01-22 18:44:07,944 - __main__ - INFO - Processing chat request - User ID: default, Input: What documents are required?
+2025-01-22 18:44:07,945 - nextopson_bot - ERROR - Response generation error: 'action'
+2025-01-22 18:44:07,947 - werkzeug - INFO - 127.0.0.1 - - [22/Jan/2025 18:44:07] "POST /chat HTTP/1.1" 200 -
+2025-01-22 18:44:08,693 - __main__ - INFO - Headers: Host: localhost:5000
+Connection: keep-alive
+Content-Length: 45
+Sec-Ch-Ua-Platform: "Windows"
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+Sec-Ch-Ua: "Google Chrome";v="131", "Chromium";v="131", "Not_A Brand";v="24"
+Content-Type: application/json
+Sec-Ch-Ua-Mobile: ?0
+Accept: */*
+Origin: http://localhost:3000
+Sec-Fetch-Site: same-site
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost:3000/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+
+
+2025-01-22 18:44:08,695 - __main__ - INFO - Body: b'{"user_input":"What documents are required?"}'
+2025-01-22 18:44:08,696 - __main__ - INFO - Processing chat request - User ID: default, Input: What documents are required?
+2025-01-22 18:44:08,697 - nextopson_bot - ERROR - Response generation error: 'action'
+2025-01-22 18:44:08,699 - werkzeug - INFO - 127.0.0.1 - - [22/Jan/2025 18:44:08] "POST /chat HTTP/1.1" 200 -
+2025-01-22 18:44:09,927 - __main__ - INFO - Headers: Host: localhost:5000
+Connection: keep-alive
+Content-Length: 45
+Sec-Ch-Ua-Platform: "Windows"
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+Sec-Ch-Ua: "Google Chrome";v="131", "Chromium";v="131", "Not_A Brand";v="24"
+Content-Type: application/json
+Sec-Ch-Ua-Mobile: ?0
+Accept: */*
+Origin: http://localhost:3000
+Sec-Fetch-Site: same-site
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost:3000/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+
+
+2025-01-22 18:44:09,930 - __main__ - INFO - Body: b'{"user_input":"What documents are required?"}'
+2025-01-22 18:44:09,931 - __main__ - INFO - Processing chat request - User ID: default, Input: What documents are required?
+2025-01-22 18:44:09,932 - nextopson_bot - ERROR - Response generation error: 'action'
+2025-01-22 18:44:09,934 - werkzeug - INFO - 127.0.0.1 - - [22/Jan/2025 18:44:09] "POST /chat HTTP/1.1" 200 -
+2025-01-22 18:44:10,174 - __main__ - INFO - Headers: Host: localhost:5000
+Connection: keep-alive
+Content-Length: 45
+Sec-Ch-Ua-Platform: "Windows"
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+Sec-Ch-Ua: "Google Chrome";v="131", "Chromium";v="131", "Not_A Brand";v="24"
+Content-Type: application/json
+Sec-Ch-Ua-Mobile: ?0
+Accept: */*
+Origin: http://localhost:3000
+Sec-Fetch-Site: same-site
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost:3000/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+
+
+2025-01-22 18:44:10,177 - __main__ - INFO - Body: b'{"user_input":"What documents are required?"}'
+2025-01-22 18:44:10,178 - __main__ - INFO - Processing chat request - User ID: default, Input: What documents are required?
+2025-01-22 18:44:10,179 - nextopson_bot - ERROR - Response generation error: 'action'
+2025-01-22 18:44:10,181 - werkzeug - INFO - 127.0.0.1 - - [22/Jan/2025 18:44:10] "POST /chat HTTP/1.1" 200 -
+2025-01-22 18:44:10,316 - __main__ - INFO - Headers: Host: localhost:5000
+Connection: keep-alive
+Content-Length: 45
+Sec-Ch-Ua-Platform: "Windows"
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+Sec-Ch-Ua: "Google Chrome";v="131", "Chromium";v="131", "Not_A Brand";v="24"
+Content-Type: application/json
+Sec-Ch-Ua-Mobile: ?0
+Accept: */*
+Origin: http://localhost:3000
+Sec-Fetch-Site: same-site
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost:3000/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+
+
+2025-01-22 18:44:10,318 - __main__ - INFO - Body: b'{"user_input":"What documents are required?"}'
+2025-01-22 18:44:10,319 - __main__ - INFO - Processing chat request - User ID: default, Input: What documents are required?
+2025-01-22 18:44:10,320 - nextopson_bot - ERROR - Response generation error: 'action'
+2025-01-22 18:44:10,322 - werkzeug - INFO - 127.0.0.1 - - [22/Jan/2025 18:44:10] "POST /chat HTTP/1.1" 200 -
+2025-01-22 18:44:13,019 - __main__ - INFO - Headers: Host: localhost:5000
+Connection: keep-alive
+Accept: */*
+Access-Control-Request-Method: POST
+Access-Control-Request-Headers: content-type
+Origin: http://localhost:3000
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: same-site
+Sec-Fetch-Dest: empty
+Referer: http://localhost:3000/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+
+
+2025-01-22 18:44:13,021 - __main__ - INFO - Body: b''
+2025-01-22 18:44:13,023 - werkzeug - INFO - 127.0.0.1 - - [22/Jan/2025 18:44:13] "OPTIONS /chat HTTP/1.1" 200 -
+2025-01-22 18:44:13,344 - __main__ - INFO - Headers: Host: localhost:5000
+Connection: keep-alive
+Content-Length: 43
+Sec-Ch-Ua-Platform: "Windows"
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+Sec-Ch-Ua: "Google Chrome";v="131", "Chromium";v="131", "Not_A Brand";v="24"
+Content-Type: application/json
+Sec-Ch-Ua-Mobile: ?0
+Accept: */*
+Origin: http://localhost:3000
+Sec-Fetch-Site: same-site
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost:3000/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+
+
+2025-01-22 18:44:13,346 - __main__ - INFO - Body: b'{"user_input":"I want to sell my property"}'
+2025-01-22 18:44:13,347 - __main__ - INFO - Processing chat request - User ID: default, Input: I want to sell my property
+2025-01-22 18:44:13,349 - nextopson_bot - ERROR - Response generation error: 'action'
+2025-01-22 18:44:13,351 - werkzeug - INFO - 127.0.0.1 - - [22/Jan/2025 18:44:13] "POST /chat HTTP/1.1" 200 -
