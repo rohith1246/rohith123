@@ -434,40 +434,42 @@ class NextopsonSupportBot:
         
         return None
 
-
     def get_response(self, user_input, user_id='default'):
-        """Enhanced response generation with conversation flow"""
+        """Enhanced response generation with better flow management"""
         try:
             # Input validation
             if not isinstance(user_input, str) or len(user_input.strip()) < 2:
                 return "Could you please provide more details about your question?"
-            
+
+            # Check for new question indicators
+            new_question_words = ['new question', 'different question', 'another question', 
+                                'something else', 'different topic']
+            if any(word in user_input.lower() for word in new_question_words):
+                self.conversation_flow.reset_flow(user_id)
+                return "I'm ready for your new question. How can I help?"
+
             # Check if user is in an active flow
             flow_state = self.conversation_flow.get_current_flow_state(user_id)
-            
             if flow_state is None:
-                # Check for flow triggers
-                lower_input = user_input.lower()
-                
-                # Buying flow triggers
-                if any(word in lower_input for word in ['buy', 'purchase', 'looking for', 'want to buy', 'searching for']):
-                    return self.conversation_flow.start_flow('buying', user_id)
-                
-                # Selling flow triggers
-                elif any(word in lower_input for word in ['sell', 'selling', 'list property', 'want to sell']):
-                    return self.conversation_flow.start_flow('selling', user_id)
-                
-                # If no flow trigger, proceed with regular response generation
+                # Normal response for new questions
                 cleaned_input = self.preprocess_input(user_input)
                 analysis = self.analyze_input(cleaned_input)
                 context = self._get_conversation_context(user_id)
-                
-                # Try intent matching first
+
+                # Check for flow triggers
+                lower_input = cleaned_input.lower()
+                if any(word in lower_input for word in ['buy', 'purchase', 'looking for', 'want to buy']):
+                    return self.conversation_flow.start_flow('buying', user_id)
+                elif any(word in lower_input for word in ['sell', 'selling', 'list property']):
+                    return self.conversation_flow.start_flow('selling', user_id)
+
+                # Use your existing response generation methods
+                # 1. Try intent matching first
                 intent_response = self._get_intent_response(user_input)
                 if intent_response:
                     return intent_response
-                
-                # Try ML model
+
+                # 2. Try ML model
                 try:
                     ml_response, confidence = self.get_ml_response(cleaned_input)
                     if ml_response and confidence > 0.7:
@@ -482,19 +484,18 @@ class NextopsonSupportBot:
                         return enhanced_response
                 except Exception as e:
                     logger.error(f"ML response error: {str(e)}")
-                
-                # Try pattern matching
+
+                # 3. Try pattern matching
                 try:
                     chat_response = self.chat.respond(cleaned_input)
                     if chat_response:
                         return chat_response
                 except Exception as e:
                     logger.error(f"Chat response error: {str(e)}")
-                
+
                 return self.get_contextual_fallback_response(analysis)
-            
             else:
-                # Continue the conversation flow
+                # Handle ongoing flow
                 next_response = self.conversation_flow.get_next_response(user_id, user_input)
                 if next_response:
                     return next_response
@@ -505,8 +506,9 @@ class NextopsonSupportBot:
 
         except Exception as e:
             logger.error(f"Response generation error: {str(e)}")
+            self.conversation_flow.reset_flow(user_id)
             return "I'm having trouble understanding your question. Could you rephrase it?"
-    
+
     def _cleanup_old_sessions(self):
         """Clean up old sessions"""
         try:
@@ -602,93 +604,169 @@ class NextopsonSupportBot:
                        "You can say 'exit' to cancel this process, or continue by answering the question."
                        
         return None        
-# Add this new class to handle conversation flows
+# Add these methods to the ConversationFlow class
+
 class ConversationFlow:
     def __init__(self):
+        # Define the complete conversation flows with all possible states
         self.flows = {
             'buying': {
                 'start': {
-                    'message': "Great! I'll help you find your ideal property. What type of property are you looking for? (Apartment/House/Villa/Plot)",
-                    'next': 'property_type'
-                },
-                'property_type': {
-                    'message': "Perfect. What's your preferred location or area?",
-                    'next': 'location'
+                    'message': "What type of property are you looking to buy? (e.g., apartment, house, commercial)",
+                    'next': 'location',
+                    'validation': lambda x: bool(x.strip())
                 },
                 'location': {
-                    'message': "What's your budget range? (e.g., 20-30 lakhs, 1-2 crores)",
-                    'next': 'budget'
+                    'message': "Which area are you interested in?",
+                    'next': 'budget',
+                    'validation': lambda x: bool(x.strip())
                 },
                 'budget': {
-                    'message': "Would you like to see properties with specific amenities? (e.g., parking, gym, swimming pool)",
-                    'next': 'amenities'
+                    'message': "What's your budget range?",
+                    'next': 'requirements',
+                    'validation': lambda x: bool(x.strip())
                 },
-                'amenities': {
-                    'message': "Great! I'll search for properties matching your criteria. Would you like to:\n1. View available properties\n2. Schedule property visits\n3. Get a callback from our property expert",
-                    'next': 'action'
+                'requirements': {
+                    'message': "Any specific requirements? (e.g., number of bedrooms, parking)",
+                    'next': 'end',
+                    'validation': lambda x: True  # Optional field
                 },
-                'action': {
-                    'message': "I'll help you with that. Please confirm your contact number to proceed.",
-                    'next': 'contact'
+                'end': {
+                    'message': "Thank you! I'll search for properties matching your criteria. Would you like to see the available listings?",
+                    'next': None
                 }
             },
             'selling': {
                 'start': {
-                    'message': "I'll help you list your property. What type of property do you want to sell? (Apartment/House/Villa/Plot)",
-                    'next': 'property_type'
-                },
-                'property_type': {
-                    'message': "What's the location of your property?",
-                    'next': 'location'
+                    'message': "What type of property would you like to sell?",
+                    'next': 'location',
+                    'validation': lambda x: bool(x.strip())
                 },
                 'location': {
-                    'message': "What's the expected price for your property?",
-                    'next': 'price'
+                    'message': "Where is your property located?",
+                    'next': 'price',
+                    'validation': lambda x: bool(x.strip())
                 },
                 'price': {
-                    'message': "Please list the main amenities of your property:",
-                    'next': 'amenities'
+                    'message': "What's your expected selling price?",
+                    'next': 'details',
+                    'validation': lambda x: bool(x.strip())
                 },
-                'amenities': {
-                    'message': "Would you like to:\n1. List your property now\n2. Get a property valuation\n3. Speak with our property expert",
-                    'next': 'action'
+                'details': {
+                    'message': "Please provide key details about your property (e.g., size, bedrooms, amenities)",
+                    'next': 'end',
+                    'validation': lambda x: bool(x.strip())
+                },
+                'end': {
+                    'message': "Great! I'll help you create your property listing. Would you like to proceed?",
+                    'next': None
                 }
             }
         }
         self.user_states = {}
+        self.flow_timeout = 3  # 5 minutes timeout
 
     def start_flow(self, flow_type, user_id):
-        if flow_type in self.flows:
-            self.user_states[user_id] = {
-                'flow': flow_type,
-                'state': 'start',
-                'data': {}
-            }
-            return self.flows[flow_type]['start']['message']
-        return None
-
-    def get_next_response(self, user_id, user_input):
-        if user_id not in self.user_states:
-            return None
-        
-        current_flow = self.flows[self.user_states[user_id]['flow']]
-        current_state = self.user_states[user_id]['state']
-        
-        # Store user's response
-        self.user_states[user_id]['data'][current_state] = user_input
-        
-        # Get next state
-        next_state = current_flow[current_state]['next']
-        self.user_states[user_id]['state'] = next_state
-        
-        return current_flow[next_state]['message']
+        """Start a new conversation flow"""
+        if flow_type not in self.flows:
+            return "I apologize, but that conversation type isn't available."
+            
+        self.user_states[user_id] = {
+            'flow': flow_type,
+            'state': 'start',
+            'data': {},
+            'last_update': datetime.now()
+        }
+        return self.flows[flow_type]['start']['message']
 
     def get_current_flow_state(self, user_id):
-        return self.user_states.get(user_id, None)
+        """Get the current state of user's conversation flow"""
+        return self.user_states.get(user_id)
 
     def reset_flow(self, user_id):
+        """Reset the conversation flow for a user"""
         if user_id in self.user_states:
             del self.user_states[user_id]
+
+    def get_next_response(self, user_id, user_input):
+        """Process user input and get next response"""
+        try:
+            if user_id not in self.user_states:
+                return None
+
+            # Check for timeout
+            if self._check_timeout(user_id):
+                return "Our conversation timed out. Would you like to start again?"
+
+            # Get current flow and state
+            current_flow = self.flows[self.user_states[user_id]['flow']]
+            current_state = self.user_states[user_id]['state']
+            
+            # Validate input if validation function exists
+            if 'validation' in current_flow[current_state]:
+                if not current_flow[current_state]['validation'](user_input):
+                    return f"I'm sorry, but I need a valid {current_state}. {current_flow[current_state]['message']}"
+
+            # Store user's response
+            self.user_states[user_id]['data'][current_state] = user_input
+            
+            # Update timestamp
+            self.user_states[user_id]['last_update'] = datetime.now()
+
+            # Get next state
+            next_state = current_flow[current_state]['next']
+            
+            # Check if flow is complete
+            if next_state is None:
+                flow_data = self.user_states[user_id]['data']
+                self.reset_flow(user_id)
+                return self._generate_summary(flow_data, self.user_states[user_id]['flow'])
+
+            # Update state and return next message
+            self.user_states[user_id]['state'] = next_state
+            return current_flow[next_state]['message']
+
+        except Exception as e:
+            logger.error(f"Error in flow progression: {str(e)}")
+            self.reset_flow(user_id)
+            return "I encountered an error. Would you like to start over?"
+
+    def _check_timeout(self, user_id):
+        """Check if the current flow has timed out"""
+        if user_id in self.user_states:
+            last_update = self.user_states[user_id].get('last_update')
+            if last_update and (datetime.now() - last_update).seconds > self.flow_timeout:
+                self.reset_flow(user_id)
+                return True
+        return False
+
+    def _generate_summary(self, flow_data, flow_type):
+        """Generate a summary of the conversation flow"""
+        if flow_type == 'buying':
+            return (
+                f"Great! I'll look for {flow_data.get('start', 'properties')} "
+                f"in {flow_data.get('location', 'your preferred area')} "
+                f"within your budget of {flow_data.get('budget', 'specified range')}. "
+                f"Requirements: {flow_data.get('requirements', 'None specified')}. "
+                "I'll show you matching properties shortly."
+            )
+        elif flow_type == 'selling':
+            return (
+                f"Perfect! I'll help list your {flow_data.get('start', 'property')} "
+                f"located in {flow_data.get('location', 'specified area')} "
+                f"with an asking price of {flow_data.get('price', 'specified amount')}. "
+                f"Details: {flow_data.get('details', 'None provided')}. "
+                "Would you like to review your listing before publishing?"
+            )
+        return "Thank you for providing the information. How else can I help you?"
+
+    def handle_interruption(self, user_id, user_input):
+        """Handle user interruptions in the flow"""
+        interrupt_commands = {'cancel', 'stop', 'quit', 'exit', 'restart', 'new'}
+        if user_input.lower() in interrupt_commands:
+            self.reset_flow(user_id)
+            return "I've cancelled the current process. How else can I help you?"
+        return None
 def initialize_bot():
     """Initialize the bot"""
     try:
