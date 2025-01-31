@@ -75,8 +75,19 @@ class NextopsonSupportBot:
         self.intents = intents['intents']
         self.conversation_flow = ConversationFlow()
 
-
-        self.train_data = [
+        self.train_data = []
+        for intent in self.intents:
+            for pattern in intent.get('patterns', []):
+            # Use the first response as the training output
+             if intent.get('responses'):
+                self.train_data.append((
+                    pattern, 
+                    intent['responses'][0]
+                ))
+        
+        
+        
+        additional_training = [
             # Basic Information
             ('What is Nextopson?', 'Nextopson is a zero-brokerage real estate platform that directly connects property buyers and sellers. We make property transactions simple and cost-effective.'),
             ('How does Nextopson work?', 'Nextopson lets you list and find properties without any brokerage fees. Simply sign up, browse listings, or post your property to get started.'),
@@ -184,7 +195,7 @@ class NextopsonSupportBot:
             ('Feedback', 'Share your feedback through our app/website or email us at feedback@nextopson.com'),
             ('File complaint', 'Report issues or file complaints through our grievance redressal system for quick resolution.')
         ]
-
+        self.train_data.extend(additional_training)
  
 
 
@@ -428,9 +439,9 @@ class NextopsonSupportBot:
         user_input = user_input.lower()
         
         for intent in self.intents:
-            for pattern in intent['patterns']:
+            for pattern in intent.get('patterns', []):
                 if pattern.lower() in user_input:
-                    return random.choice(intent['responses'])
+                    return random.choice(intent.get('responses', [])) if intent.get('responses') else None
         
         return None
 
@@ -658,13 +669,13 @@ class ConversationFlow:
                     'validation': lambda x: bool(x.strip())
                 },
                 'end': {
-                    'message': "Great! I'll help you create your property listing. Would you like to proceed?",
+                    'message': "Great! You can upload  in our website it is very user friendly",
                     'next': None
                 }
             }
         }
         self.user_states = {}
-        self.flow_timeout = 3  # 5 minutes timeout
+        self.flow_timeout = 30  # 5 minutes timeout
 
     def start_flow(self, flow_type, user_id):
         """Start a new conversation flow"""
@@ -748,7 +759,7 @@ class ConversationFlow:
                 f"in {flow_data.get('location', 'your preferred area')} "
                 f"within your budget of {flow_data.get('budget', 'specified range')}. "
                 f"Requirements: {flow_data.get('requirements', 'None specified')}. "
-                "I'll show you matching properties shortly."
+                "You can Use Our Search Filter For selecting properties"
             )
         elif flow_type == 'selling':
             return (
