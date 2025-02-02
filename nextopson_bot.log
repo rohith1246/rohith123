@@ -4412,3 +4412,342 @@ Accept-Language: en-US,en;q=0.9
 2025-01-22 19:29:19,944 - __main__ - INFO - Starting Nextopson Chatbot API
 2025-01-22 19:29:19,949 - werkzeug - WARNING -  * Debugger is active!
 2025-01-22 19:29:19,951 - werkzeug - INFO -  * Debugger PIN: 125-441-212
+2025-02-02 18:26:30,258 - nextopson_bot - INFO - No model file found
+2025-02-02 18:26:30,259 - nextopson_bot - INFO - No valid model found, training new model...
+2025-02-02 18:26:32,148 - nextopson_bot - INFO - Model validation report:
+                                                                                                                                                                                            precision    recall  f1-score   support
+
+                                                                        Access detailed area guides with information about locality, infrastructure, prices, and future development plans.       1.00      0.00      0.00         1
+                                                                                           Access real-time market trends, price history, and future projections for different localities.       0.00      1.00      0.00         0
+                                                                                       Access standard rental agreement templates or get customized agreements through our legal partners.       0.00      1.00      0.00         0
+                                                                  Advanced tech features:
+1. AI-powered matching
+2. Virtual 3D tours
+3. Digital documentation
+4. Real-time property alerts       1.00      0.00      0.00         2
+                                                                                      After logging in, click on "My Account" and select "My Listings" to view all your property listings.       0.00      1.00      0.00         0
+                                                                             All our core services are free. We may offer optional premium features for enhanced visibility in the future.       0.00      1.00      0.00         0
+                                                                                                         Book verified packers and movers through our platform for hassle-free relocation.       1.00      0.00      0.00         1
+                                                                        Browse apartments, independent houses, villas, penthouses, studio apartments, and more in our residential section.       0.00      1.00      0.00         0
+                                                                                                  Budget-friendly options are our specialty! Let's find properties that match your budget.       0.00      0.00      0.00         1
+                                                                                                    Budget-friendly options are our strength! Let's find a property that fits your budget.       0.00      0.00      0.00         3
+                                                                                                                             City abbreviations decoded! Let's find your perfect property.       0.00      1.00      0.00         0
+                                                                 Compare home loan offers from multiple banks through our platform. We have partnered with leading financial institutions.       0.00      1.00      0.00         0
+                                                                                 Comprehensive co-ownership solutions:
+1. Legal documentation
+2. Investment structuring
+3. Risk management       1.00      0.00      0.00         2
+                                                                                 Comprehensive property insurance covering:
+1. Structural damage
+2. Natural calamities
+3. Theft protection       1.00      0.00      0.00         1
+                                                                                                  Connect with our partner interior designers for home renovation and decoration services.       1.00      0.00      0.00         1
+                                                                                           Contact us:
+1. Email: support@nextopson.com
+2. Phone: 1800-XXX-XXXX
+3. Live chat
+4. Help center       0.33      0.50      0.40         2
+                                                                                Digital nomad housing solutions:
+1. High-speed internet
+2. Flexible lease terms
+3. Global location options       1.00      0.00      0.00         1
+                                                             Eco-friendly properties with:
+1. Solar integration
+2. Rainwater harvesting
+3. Energy-efficient design
+4. Green certifications       0.00      1.00      0.00         0
+                                                                                          End-to-end property maintenance:
+1. Regular inspections
+2. Repair services
+3. Renovation support       1.00      1.00      1.00         1
+                                                                            Find offices, retail spaces, warehouses, industrial properties, and commercial land in our commercial section.       1.00      0.00      0.00         1
+                                                        For listing: Property ownership proof, tax receipts, and ID proof. For buying: Just create an account to start viewing properties.       1.00      0.00      0.00         1
+                                                   For technical issues, please try refreshing the page or clearing your browser cache. If the problem persists, contact our support team.       0.00      1.00      0.00         0
+                                                                           Get guidance on required legal documents like sale deed, property tax receipts, NOC, and occupancy certificate.       0.00      1.00      0.00         0
+                                                                                                                             Global property investment support across multiple countries!       1.00      0.00      0.00         1
+                                                                                                                     Got your abbreviated search! Let me help you find properties in full.       1.00      0.00      0.00         1
+                                                                     Green zone property solutions:
+1. Environmental compliance
+2. Sustainability certification
+3. Conservation guidelines       1.00      0.00      0.00         1
+                                                                                                               Hello! Welcome to Nextopson. How can I assist you with your property needs?       1.00      0.00      0.00         2
+                                                                                                                      Hello! Welcome to Nextopson. How can I help you with property needs?       0.05      1.00      0.09         1
+                                                                                                                                              Hey there! Let's find your perfect property.       1.00      0.00      0.00         1
+                                                                                           I can help you find the perfect property. Could you specify your preferred location and budget?       0.00      0.00      0.00         4
+                                                                    Innovative crowdfunding models:
+1. Minimum investment options
+2. Diversified property portfolio
+3. Transparent returns       1.00      0.00      0.00         1
+                                                                             List your property for rent with detailed terms, preferred tenant profile, and rental agreement requirements.       1.00      0.00      0.00         1
+                                                                                     Listing is easy:
+1. Create account
+2. Click 'List Property'
+3. Add details
+4. Upload photos
+5. Submit       0.00      0.00      0.00         2
+Listing your property on Nextopson is easy! Just follow these steps:
+1. Create an account
+2. Click 'List Property'
+3. Fill in property details
+4. Upload photos
+5. Submit for verification       1.00      0.00      0.00         1
+                                                                                                                         Location is key! Let's find properties in the right area for you.       0.00      0.00      0.00         1
+                                                                      Log in, go to "My Listings," select your property, and use the "Update Documents" option to add or modify documents.       1.00      0.00      0.00         1
+                                                                                            Luxury property features:
+1. Smart home technology
+2. Premium locations
+3. Exclusive amenities       0.00      1.00      0.00         0
+                                                                           Many properties offer virtual tours. Look for the "360° View" icon on listings to explore properties virtually.       1.00      0.00      0.00         1
+                                                                                           Micro housing solutions:
+1. Space optimization
+2. Cost-effective options
+3. Urban living design       0.00      0.00      0.00         1
+                                                                            Nextopson is completely free! We charge zero brokerage and no hidden fees for listing or searching properties.       1.00      0.00      0.00         1
+                                                                                              Nextopson operates on a zero-brokerage model. We don't charge any commission or hidden fees!       1.00      0.00      0.00         2
+                                                                         No commission at all! Nextopson operates on a zero-brokerage model to make property transactions more affordable.       1.00      0.00      0.00         1
+                                                                           No worries about typos! Let's help you find the right property. Did you mean a property in Bangalore or Mumbai?       1.00      0.00      0.00         2
+                                Our comprehensive legal verification includes:
+1. Title search
+2. Document authentication
+3. No-objection certificate check
+4. Legal compliance assessment       0.00      0.00      0.00         1
+                                                                                                   Our market insights and property analytics help you make informed investment decisions.       1.00      0.00      0.00         1
+                                                                      Our mobile app offers property search, instant notifications, chat with sellers/buyers, and easy listing management.       0.00      1.00      0.00         0
+                                                                                                     Our property management services help you maintain and manage your property remotely.       1.00      0.00      0.00         1
+                                                                                            Our team verifies all property documents within 24 hours of submission to ensure authenticity.       1.00      0.00      0.00         1
+                                         Our valuation process includes:
+1. Comparative market analysis
+2. Location assessment
+3. Property condition evaluation
+4. Future growth potential       1.00      0.00      0.00         1
+                                                                                  Premium members get priority support, advanced analytics, and exclusive access to pre-launch properties.       1.00      0.00      0.00         1
+                                                                                                                                       Quick sale solutions with maximum value protection!       0.00      0.00      0.00         1
+                                                                                                         Share your feedback through our app/website or email us at feedback@nextopson.com       1.00      0.00      0.00         1
+                                                                               Specialized heritage property support:
+1. Legal compliance
+2. Restoration guidance
+3. Cultural preservation       1.00      0.00      0.00         1
+                                                                            Specialized retirement property solutions:
+1. Accessibility design
+2. Healthcare proximity
+3. Community living       0.00      0.00      0.00         1
+                                                                                                                     Tell me more about what makes a property 'nice' or 'awesome' for you!       1.00      0.00      0.00         1
+                                                                                                                                       Thank you for choosing Nextopson! Have a great day!       1.00      0.00      0.00         2
+                                                                                                                                          Thank you for using Nextopson! Have a great day!       0.00      0.00      0.00         2
+           To list your property on Nextopson: 1) Sign up/Login 2) Click "Post Property" 3) Fill in property details 4) Upload photos 5) Submit for verification. Need help with any step?       0.00      1.00      0.00         0
+                                                               Top investment areas include: Bangalore Tech Corridor, Hyderabad's HITEC City, Mumbai's Suburban Zones, and Pune's IT Hubs.       1.00      0.00      0.00         2
+                                                    Try updating the app to the latest version, check your internet connection, or clear the app cache. Contact support if issues persist.       1.00      0.00      0.00         1
+                                                                         Use the "Report" button on listings or contact our support team through the help center for immediate assistance.       1.00      0.00      0.00         1
+                                                                                    Verification steps:
+1. Document check
+2. Owner authentication
+3. Physical verification
+4. Legal checks       0.00      1.00      0.00         0
+                                                                                  We have an extensive range of property types. From luxury villas to commercial spaces, we've got it all!       1.00      0.00      0.00         8
+                                                               We help verify property legal status and documentation. Optional legal assistance is available through our partner lawyers.       0.00      1.00      0.00         0
+                                                                          We list residential properties (apartments, houses, villas), commercial spaces (offices, shops), and land/plots.       1.00      0.00      0.00         1
+                                                                                                                 We partner with top banks for home loan support. Get pre-approved faster!       1.00      1.00      1.00         1
+                                                                                                                We understand your urgency. Let's find the right property for you quickly!       1.00      0.00      0.00         2
+                                                                                                                        We understand your urgency. Let's find the right property quickly!       0.00      0.00      0.00         1
+                                                        We verify all property listings through:
+1. Document verification
+2. Owner authentication
+3. Physical verification
+4. Legal checks       1.00      0.00      0.00         2
+                                                                               We verify property ownership and ensure all listings have clear titles before they go live on our platform.       0.00      1.00      0.00         0
+                                                                                                                           What type of property are you looking for? Location and budget?       1.00      0.00      0.00         1
+                                                                  Yes, our team verifies all property listings to ensure authenticity. We check property documents and seller credentials.       1.00      0.00      0.00         1
+                                                                   You can reach our support team through: 1) Help Center 2) support@nextopson.com 3) In-app chat 4) Customer care number.       0.00      1.00      0.00         0
+                                                              You can reach us through:
+1. Email: support@nextopson.com
+2. Phone: 1800-XXX-XXXX
+3. Live chat on our website
+4. Help center       1.00      0.00      0.00         3
+                                                                                                                                       Zero-brokerage model. No commission or hidden fees!       1.00      0.00      0.00         1
+
+                                                                                                                                                                                  accuracy                           0.05        84
+                                                                                                                                                                                 macro avg       0.61      0.27      0.03        84
+                                                                                                                                                                              weighted avg       0.76      0.05      0.03        84
+
+2025-02-02 18:26:32,182 - nextopson_bot - INFO - Model saved to nextopson_bot_model.joblib
+2025-02-02 18:26:32,183 - nextopson_bot - INFO - Bot initialized successfully
+2025-02-02 18:26:32,211 - nextopson_bot - INFO - Loaded model trained at 202502021826
+2025-02-02 18:26:32,212 - nextopson_bot - INFO - Successfully loaded pre-trained model
+2025-02-02 18:26:32,212 - nextopson_bot - INFO - Bot initialized successfully
+2025-02-02 18:26:32,213 - __main__ - INFO - Chatbot initialized successfully
+2025-02-02 18:26:32,214 - __main__ - INFO - Starting Nextopson Chatbot API
+2025-02-02 18:26:32,261 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.114.46:5000
+2025-02-02 18:26:32,263 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-02-02 18:26:32,263 - werkzeug - INFO -  * Restarting with stat
+2025-02-02 18:26:33,723 - nextopson_bot - INFO - Loaded model trained at 202502021826
+2025-02-02 18:26:33,724 - nextopson_bot - INFO - Successfully loaded pre-trained model
+2025-02-02 18:26:33,725 - nextopson_bot - INFO - Bot initialized successfully
+2025-02-02 18:26:33,750 - nextopson_bot - INFO - Loaded model trained at 202502021826
+2025-02-02 18:26:33,751 - nextopson_bot - INFO - Successfully loaded pre-trained model
+2025-02-02 18:26:33,752 - nextopson_bot - INFO - Bot initialized successfully
+2025-02-02 18:26:33,752 - __main__ - INFO - Chatbot initialized successfully
+2025-02-02 18:26:33,753 - __main__ - INFO - Starting Nextopson Chatbot API
+2025-02-02 18:26:33,762 - werkzeug - WARNING -  * Debugger is active!
+2025-02-02 18:26:33,770 - werkzeug - INFO -  * Debugger PIN: 644-590-780
+2025-02-02 18:27:18,672 - nextopson_bot - INFO - Loaded model trained at 202502021826
+2025-02-02 18:27:18,673 - nextopson_bot - INFO - Successfully loaded pre-trained model
+2025-02-02 18:27:18,674 - nextopson_bot - INFO - Bot initialized successfully
+2025-02-02 18:27:18,699 - nextopson_bot - INFO - Loaded model trained at 202502021826
+2025-02-02 18:27:18,700 - nextopson_bot - INFO - Successfully loaded pre-trained model
+2025-02-02 18:27:18,700 - nextopson_bot - INFO - Bot initialized successfully
+2025-02-02 18:27:18,701 - __main__ - INFO - Chatbot initialized successfully
+2025-02-02 18:27:18,703 - __main__ - INFO - Starting Nextopson Chatbot API
+2025-02-02 18:27:18,718 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.114.46:5000
+2025-02-02 18:27:18,720 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-02-02 18:27:18,721 - werkzeug - INFO -  * Restarting with stat
+2025-02-02 18:27:20,047 - nextopson_bot - INFO - Loaded model trained at 202502021826
+2025-02-02 18:27:20,047 - nextopson_bot - INFO - Successfully loaded pre-trained model
+2025-02-02 18:27:20,048 - nextopson_bot - INFO - Bot initialized successfully
+2025-02-02 18:27:20,072 - nextopson_bot - INFO - Loaded model trained at 202502021826
+2025-02-02 18:27:20,073 - nextopson_bot - INFO - Successfully loaded pre-trained model
+2025-02-02 18:27:20,074 - nextopson_bot - INFO - Bot initialized successfully
+2025-02-02 18:27:20,075 - __main__ - INFO - Chatbot initialized successfully
+2025-02-02 18:27:20,076 - __main__ - INFO - Starting Nextopson Chatbot API
+2025-02-02 18:27:20,084 - werkzeug - WARNING -  * Debugger is active!
+2025-02-02 18:27:20,088 - werkzeug - INFO -  * Debugger PIN: 644-590-780
+2025-02-02 18:31:14,925 - __main__ - INFO - Headers: Host: localhost:5000
+Connection: keep-alive
+Accept: */*
+Access-Control-Request-Method: POST
+Access-Control-Request-Headers: content-type
+Origin: http://localhost:3000
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: same-site
+Sec-Fetch-Dest: empty
+Referer: http://localhost:3000/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+
+
+2025-02-02 18:31:14,935 - __main__ - INFO - Body: b''
+2025-02-02 18:31:14,953 - werkzeug - INFO - 127.0.0.1 - - [02/Feb/2025 18:31:14] "OPTIONS /chat HTTP/1.1" 200 -
+2025-02-02 18:31:15,130 - __main__ - INFO - Headers: Host: localhost:5000
+Connection: keep-alive
+Content-Length: 38
+Sec-Ch-Ua-Platform: "Windows"
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+Sec-Ch-Ua: "Not A(Brand";v="8", "Chromium";v="132", "Google Chrome";v="132"
+Content-Type: application/json
+Sec-Ch-Ua-Mobile: ?0
+Accept: */*
+Origin: http://localhost:3000
+Sec-Fetch-Site: same-site
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost:3000/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+
+
+2025-02-02 18:31:15,135 - __main__ - INFO - Body: b'{"user_input":"What is your pricing?"}'
+2025-02-02 18:31:15,138 - __main__ - INFO - Processing chat request - User ID: default, Input: What is your pricing?
+2025-02-02 18:31:27,319 - werkzeug - INFO - 127.0.0.1 - - [02/Feb/2025 18:31:27] "POST /chat HTTP/1.1" 200 -
+2025-02-02 18:31:42,750 - __main__ - INFO - Headers: Host: localhost:5000
+Connection: keep-alive
+Accept: */*
+Access-Control-Request-Method: POST
+Access-Control-Request-Headers: content-type
+Origin: http://localhost:3000
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: same-site
+Sec-Fetch-Dest: empty
+Referer: http://localhost:3000/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+
+
+2025-02-02 18:31:42,753 - __main__ - INFO - Body: b''
+2025-02-02 18:31:42,755 - werkzeug - INFO - 127.0.0.1 - - [02/Feb/2025 18:31:42] "OPTIONS /chat HTTP/1.1" 200 -
+2025-02-02 18:31:43,016 - __main__ - INFO - Headers: Host: localhost:5000
+Connection: keep-alive
+Content-Length: 28
+Sec-Ch-Ua-Platform: "Windows"
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+Sec-Ch-Ua: "Not A(Brand";v="8", "Chromium";v="132", "Google Chrome";v="132"
+Content-Type: application/json
+Sec-Ch-Ua-Mobile: ?0
+Accept: */*
+Origin: http://localhost:3000
+Sec-Fetch-Site: same-site
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost:3000/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+
+
+2025-02-02 18:31:43,018 - __main__ - INFO - Body: b'{"user_input":"hello world"}'
+2025-02-02 18:31:43,020 - __main__ - INFO - Processing chat request - User ID: default, Input: hello world
+2025-02-02 18:31:43,022 - werkzeug - INFO - 127.0.0.1 - - [02/Feb/2025 18:31:43] "POST /chat HTTP/1.1" 200 -
+2025-02-02 18:31:46,482 - __main__ - INFO - Headers: Host: localhost:5000
+Connection: keep-alive
+Content-Length: 20
+Sec-Ch-Ua-Platform: "Windows"
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+Sec-Ch-Ua: "Not A(Brand";v="8", "Chromium";v="132", "Google Chrome";v="132"
+Content-Type: application/json
+Sec-Ch-Ua-Mobile: ?0
+Accept: */*
+Origin: http://localhost:3000
+Sec-Fetch-Site: same-site
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost:3000/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+
+
+2025-02-02 18:31:46,485 - __main__ - INFO - Body: b'{"user_input":"yes"}'
+2025-02-02 18:31:46,486 - __main__ - INFO - Processing chat request - User ID: default, Input: yes
+2025-02-02 18:31:46,576 - werkzeug - INFO - 127.0.0.1 - - [02/Feb/2025 18:31:46] "POST /chat HTTP/1.1" 200 -
+2025-02-02 18:31:51,240 - __main__ - INFO - Headers: Host: localhost:5000
+Connection: keep-alive
+Accept: */*
+Access-Control-Request-Method: POST
+Access-Control-Request-Headers: content-type
+Origin: http://localhost:3000
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: same-site
+Sec-Fetch-Dest: empty
+Referer: http://localhost:3000/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+
+
+2025-02-02 18:31:51,242 - __main__ - INFO - Body: b''
+2025-02-02 18:31:51,244 - werkzeug - INFO - 127.0.0.1 - - [02/Feb/2025 18:31:51] "OPTIONS /chat HTTP/1.1" 200 -
+2025-02-02 18:31:51,506 - __main__ - INFO - Headers: Host: localhost:5000
+Connection: keep-alive
+Content-Length: 30
+Sec-Ch-Ua-Platform: "Windows"
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+Sec-Ch-Ua: "Not A(Brand";v="8", "Chromium";v="132", "Google Chrome";v="132"
+Content-Type: application/json
+Sec-Ch-Ua-Mobile: ?0
+Accept: */*
+Origin: http://localhost:3000
+Sec-Fetch-Site: same-site
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost:3000/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+
+
+2025-02-02 18:31:51,509 - __main__ - INFO - Body: b'{"user_input":"what the fuck"}'
+2025-02-02 18:31:51,510 - __main__ - INFO - Processing chat request - User ID: default, Input: what the fuck
+2025-02-02 18:31:51,574 - werkzeug - INFO - 127.0.0.1 - - [02/Feb/2025 18:31:51] "POST /chat HTTP/1.1" 200 -

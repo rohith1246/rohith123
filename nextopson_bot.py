@@ -21,6 +21,8 @@ from config import BOT_CONFIG, LOGGING_CONFIG
 from intents import intents
 from nltk.corpus import stopwords
 from nltk.stem import WordNetLemmatizer
+import joblib
+import os
 
 
 
@@ -67,6 +69,8 @@ logger = logging.getLogger(__name__)
 class NextopsonSupportBot:
     def __init__(self):
         # Initialize conversation memory
+        self.model_file = "nextopson_bot_model.joblib"
+        self.model_version = "1.0" 
         self.conversation_memory = defaultdict(list)
         self.memory_size = 5
         self.MAX_MEMORY_SIZE = 1000
@@ -354,21 +358,26 @@ class NextopsonSupportBot:
             return []        
 
     def initialize_model(self):
-        """Initialize and train the ML model"""
+        """Initialize and train or load the ML model"""
         try:
+            # First, try to load an existing model
+            if self._load_model():
+                logger.info("Successfully loaded pre-trained model")
+                return
+
+            logger.info("No valid model found, training new model...")
+
             # Prepare training data
             X_train = [self.preprocess_input(x[0]) for x in self.train_data]
             y_train = [x[1] for x in self.train_data]
-            
-            # Split data with stratification
+
             X_train, X_val, y_train, y_val = train_test_split(
-                X_train, y_train, 
-                test_size=0.2, 
+                X_train, y_train,
+                test_size=0.2,
                 random_state=42,
-                
             )
-            
-            # Enhanced ML Pipeline
+
+            # Define the model pipeline
             self.pipeline = make_pipeline(
                 TfidfVectorizer(
                     ngram_range=(1, 3),
@@ -385,22 +394,72 @@ class NextopsonSupportBot:
                     random_state=42
                 )
             )
-            
-            # Train and validate
+
+            # Train the model
             self.pipeline.fit(X_train, y_train)
+
+            # Validate the model
             val_pred = self.pipeline.predict(X_val)
             val_report = classification_report(y_val, val_pred, zero_division=1)
             logger.info(f"Model validation report:\n{val_report}")
-            
+
+            # Save the newly trained model
+            self._save_model()
+
         except Exception as e:
             logger.error(f"Model initialization error: {str(e)}")
-             # Initialize a simple fallback pipeline
+
+            # Fallback initialization
             self.pipeline = make_pipeline(
                 TfidfVectorizer(),
                 RandomForestClassifier()
             )
-            # Train with minimal data
             self.pipeline.fit(['default query'], ['default response'])
+            
+    def _save_model(self):
+        """Save the trained model to file"""
+        try:
+            model_data = {
+                'version': self.model_version,
+                'pipeline': self.pipeline,
+                'train_data_version': datetime.now().strftime("%Y%m%d%H%M")
+            }
+            joblib.dump(model_data, self.model_file)
+            logger.info(f"Model saved to {self.model_file}")
+        except Exception as e:
+            logger.error(f"Failed to save model: {str(e)}")
+
+    def _load_model(self):
+        """Attempt to load a pre-trained model"""
+        try:
+            if not os.path.exists(self.model_file):
+                logger.info("No model file found")
+                return False
+
+            model_data = joblib.load(self.model_file)
+
+            if model_data.get('version') != self.model_version:
+                logger.warning("Model version mismatch, retraining...")
+                return False
+
+            self.pipeline = model_data['pipeline']
+
+            # Quick validation check
+            test_pred = self.pipeline.predict(["test query"])
+            if not isinstance(test_pred[0], str):
+                raise ValueError("Invalid model format")
+
+            logger.info(f"Loaded model trained at {model_data['train_data_version']}")
+            return True
+
+        except Exception as e:
+            logger.error(f"Model loading failed: {str(e)}")
+            try:
+                os.remove(self.model_file)
+                logger.info("Removed corrupt model file")
+            except Exception as e:
+                logger.error(f"Failed to remove corrupt file: {str(e)}")
+            return False      
 
     def preprocess_input(self, text):
         """Improved input preprocessing"""
